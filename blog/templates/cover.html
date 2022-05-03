@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>BLOG</title>
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body style="text-align: center; margin-top: 200px;">
+  <h1>2022 전솔아</h1>
+  <h2>총 {{count}}개의 일기</h2>
+  <a href="{% url 'home' %}" class="foot">목차 보러가기</a>
+</body>
+</html>
