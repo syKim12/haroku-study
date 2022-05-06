@@ -2,10 +2,10 @@ from django.shortcuts import render, redirect, get_object_or_404
 from django.utils import timezone
 from .models import Blog
 # Create your views here.
-def cover(request):
+def index(request):
   blogs = Blog.objects.all()
   count = Blog.objects.all().count()
-  return render(request, 'cover.html', {'blogs':blogs, 'count':count})
+  return render(request, 'index.html', {'blogs':blogs, 'count':count})
 
 def home(request):
   blogs = Blog.objects.all()
